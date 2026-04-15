@@ -96,6 +96,7 @@ with col2:
                 if final_list.empty:
                     st.warning(f"No phones found between ₹{price_from:,} and ₹{price_to:,}.")
                 else:
+                    st.success(f"Found {len(final_list)} top matches!")
                     for _, phone in final_list.iterrows():
                         st.markdown(f"""
                             <div class="phone-card">
